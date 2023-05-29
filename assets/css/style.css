@@ -1,0 +1,363 @@
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+html, h1, h2, h3, h4, h5, h6{
+    color:rgb(34, 34, 185);
+}
+body{
+    background: rgb(191, 197, 218);
+}
+a{
+    text-decoration: none;
+    color: inherit; 
+}
+input {
+    padding: 8px 10px;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid;
+    line-height: 1.5rem;
+    color: gray;
+}
+/*
+    Header
+*/
+
+header {
+    background: rgb(47, 0, 158);
+    height: 60px;
+}
+header *{
+    color:rgb(0, 247, 255);
+}
+header a:hover{
+    color:rgb(255, 0, 0);
+}
+header h1{
+    margin-top: 6px;
+}
+header h1 a{
+    font-size: 30px;
+}
+header h1 a:hover {
+    padding: 6px;
+}
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float:right;
+}
+header ul li{
+    float: left;
+}
+header ul li a{
+    display: block;
+    font-size: 1.01rem;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+}
+header h1 a:hover, ul li a:hover {
+    background: rgb(18, 0, 59);
+    transition: 0.5s;
+    color: white;
+    border-radius: 5px;
+}
+header ul li ul {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    display: none;
+    width: 150px;
+    z-index: 666;
+}
+.b {
+    position: relative;
+    display: none;
+    padding-top: 45px;
+    padding-left: 80px;
+    padding-right: 70px;
+    padding-bottom: 60px;
+    background-color:  rgb(18, 0, 59); 
+    border-radius: 5px;
+    z-index: 665;
+}
+header ul li:hover ul {
+    display: block;
+}
+header ul li:hover .b {
+    display: block;
+}
+header ul li ul li{
+    width: 100%;
+}
+header ul li ul li a:hover{
+    background: rgb(47, 0, 158);
+    transition: 0.5s;
+    color: white;
+    border-radius: 5px;
+}
+header ul li div {
+    top: 6px;
+}
+.profile {
+    width: 150px;
+}
+
+/*
+    SLIDER
+*/
+
+.slider-title {
+    text-align: center;
+    padding: 15px;
+}
+.carousel{
+    height: 370px;
+}
+.carousel-inner, .carousel-item {
+    height: 370px;
+    border-radius: 5px;
+}
+.carousel-caption h5{
+    font-size: 2rem;
+    background: black;
+    max-width: 100%;
+    padding: 0.3em;
+    opacity: 0.55;
+}
+.carousel-caption-hack {
+    position: absolute;
+    right: 0%;
+    bottom: 0.05rem;
+    left: 0%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 0rem;
+}
+.carousel-caption h5 a{
+    color: white;
+    text-decoration: none;
+}
+.carousel-caption h5 a:hover{
+    text-decoration: underline;
+}
+/*
+    Main
+*/
+.main-content h2 {
+    margin: 15px 0px;
+}
+.main-content .post {
+    margin-bottom: 30px;
+}
+.main-content .post_text {
+    background: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+.main-content .post_text h3 {
+    margin: 5px 0px;
+}
+.main-content .post_text h3 a:hover {
+    text-decoration: underline;
+    color: rgb(18, 0, 59);
+}
+.main-content .post_text i {
+    margin: 0px 10px 10px 0px;
+}
+/*
+    Sidebar
+*/
+.search {
+    margin-top: 69px;
+}
+.slider .section {
+    background: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.slider .topics ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border-top: 1px solid gray;
+}
+.slider .topics ul li a{
+    display: block;
+    padding: 10px 0px 10px 0px;
+    border-bottom:  1px solid gray;
+    transition: all 0.5s;
+    text-decoration: none;
+    color:rgb(47, 0, 158);
+    font-size: 1.2em;
+}
+.slider .topics ul li a:hover {
+  padding-left: 15px;  
+  background-color: rgb(191, 197, 218);
+  transition: 0.5s;
+}
+/*
+    Footer
+*/
+.footer {
+    padding: 0px;
+}
+.footer {
+    background-color: rgb(41, 33, 33);
+    color: rgb(138, 131, 206);
+    position: relative;
+}
+.footer .footer-section {
+    padding: 20px;
+}
+.footer h4, .footer h3 {
+    color: white;
+    background:rgb(46, 38, 38);
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+} 
+.footer .about .contact span {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+.footer .about  a:hover {
+    text-decoration: underline;
+    color: rgb(121, 110, 219);
+}
+.footer .about i {
+    padding: 3px;
+    border: 2px solid rgb(117, 69, 69);
+    border-radius: 5px;
+}
+.footer .links ul {
+    list-style: none;
+    font-size: 1.1em;
+    text-align: center;
+    padding-right: 45px;
+}
+.footer .links li:hover {
+    padding-left: 15px;
+    transition: all 0.3s;
+    background-color: rgb(51, 37, 100);
+    border-radius: 5px;
+    color: white;
+}
+.footer .contact-form input {
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(68, 57, 57);
+    border: black 1px solid;
+    
+} 
+.footer .contact-form textarea {
+    width: 100%;
+    background-color: rgb(68, 57, 57);
+    border: black 1px solid;
+    border-radius: 5px;
+}
+.footer .contact-form button {
+    background-color: rgb(68, 57, 57);
+    border: black 1px solid;
+}
+.footer .contact-form button:hover {
+    background-color: rgb(51, 37, 100);
+    border: white 1px solid;
+}
+.footer .footer-bottom {
+    background-color: rgb(15, 12, 12);
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+.footer-bottom a {
+    text-decoration: underline;
+}
+.footer-bottom a:hover {
+    padding-right: 3px;
+    padding-left: 3px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(51, 37, 100);
+    border-radius: 5px;
+}
+/* 
+    Single Post
+*/
+.single_post {
+    padding-bottom: 25px;
+}
+.single_post .info {
+    padding: 25px 25px 25px 12px;
+}
+.single_post .info i{
+    display: inline-block;
+}
+.single_post a {
+    text-decoration: underline;
+}
+.single_post a:hover {
+    color:blue;
+    text-decoration: none;
+    transition: 0.5s;
+}
+/*
+    About Us
+*/
+.main-content .head3-about-us {
+    padding-top: 20px;
+    text-align: center;
+}
+.main-content .head3-about-us h3 {
+    background-color: rgb(162, 154, 228);
+    display:inline-block;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 15px;
+}
+.about-us {
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.about-us hr {
+    width: 60%;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+/*
+    registration page
+*/
+/*
+    Forms
+*/
+.reg_form h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+.reg_form input {
+    height: 3rem;
+}
+.reg_form a {
+    font-size: 1.2em;
+    transition: all 0.3s;
+    text-decoration: underline;
+    color: #504a4a;
+    margin-left: 60px;
+}
+.reg_form a:hover {
+    margin-left: 50px;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+   
