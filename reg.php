@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 <?php include "path.php"; ?>
-=======
-<?php 
-    include "path.php";
-    include "app/controllers/users.php";    
-?>
->>>>>>> 5c2c480 (добавлена обработка формы регистрации)
 <!doctype html>
 <html lang="en">
     <head>
@@ -28,47 +21,27 @@
     <!-- Header end -->
         <!-- Form start -->
         <div class="container reg_form">
-<<<<<<< HEAD
-            <form class="row justify-content-center" method="post" action="reg.html">
-                <h2>Форма для регистрации</h2>
-                <div class="mb-3 col-12 col-md-4">
-                    <label for="formGroupExampleInput" class="form-label">Логин</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-=======
             <form class="row justify-content-center" method="post" action="reg.php">
                 <h2>Форма для регистрации</h2>
                 <div class="mb-3 col-12 col-md-4">
                     <label for="formGroupExampleInput" class="form-label">Логин</label>
                     <input name="login" type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
->>>>>>> 5c2c480 (добавлена обработка формы регистрации)
                 </div>
                 <div class="w-100"></div>
                 <div class="mb-3 col-12 col-md-4">
                     <label for="exampleInputEmail1" class="form-label">Электронная почта</label>
-<<<<<<< HEAD
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-=======
                     <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
->>>>>>> 5c2c480 (добавлена обработка формы регистрации)
                     <div id="emailHelp" class="form-text">Ваша почта не будет использована для спама</div>
                 </div>
                 <div class="w-100"></div>
                 <div class="mb-3 col-12 col-md-4">
                     <label for="exampleInputPassword1" class="form-label">Пароль</label>
-<<<<<<< HEAD
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-=======
                     <input name="password" type="password" class="form-control" id="exampleInputPassword1">
->>>>>>> 5c2c480 (добавлена обработка формы регистрации)
                 </div>
                 <div class="w-100"></div>
                 <div class="mb-3 col-12 col-md-4">
                     <label for="exampleInputPassword2" class="form-label">Повторите пароль</label>
-<<<<<<< HEAD
-                    <input type="password" class="form-control" id="exampleInputPassword2">
-=======
                     <input name="repeat-password" type="password" class="form-control" id="exampleInputPassword2">
->>>>>>> 5c2c480 (добавлена обработка формы регистрации)
                 </div>
                 <div class="w-100"></div>
                 <div class="mb-3 col-12 col-md-4">

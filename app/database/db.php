@@ -54,10 +54,7 @@ function insert($table, $arrData) {
     $query = $pdo->prepare($sql);
     $query->execute($arrData);
     dbCheckErr($query);
-<<<<<<< HEAD
-=======
     return $pdo->lastInsertId();
->>>>>>> 5c2c480 (добавлена обработка формы регистрации)
 }
 //update in table
 function update($table, $id, $arrData) {
@@ -81,7 +78,6 @@ function update($table, $id, $arrData) {
     $query->execute($arrData);
     dbCheckErr($query);
 }
-<<<<<<< HEAD
 
 //delete in table
 function delete($table, $id) {
@@ -91,24 +87,5 @@ function delete($table, $id) {
     $query->execute();
     dbCheckErr($query);
 }
-
-$arrData = [
-    'admin' => '1',
-    'username' => '12903kl4',
-    'email' => 'ujds@m',
-    'password' => 'd123dfd43ghj'
-];
-tt(update('users', 1, $arrData));
-delete('users',19);
-tt(selectAll('users'));
-=======
-$arrData = [
-    'admin' => '0',
-    'username' => '12903sdfkl4',
-    'email' => 'ujds@fsadm',
-    'password' => 'dsf234123dfd43ghj'
-];
-update('users', 5, $arrData);
->>>>>>> 5c2c480 (добавлена обработка формы регистрации)
 
 
