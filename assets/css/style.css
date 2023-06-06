@@ -360,4 +360,12 @@ header ul li div {
     transition: all 0.3s;
     text-decoration: none;
 }
-   
+
+/*
+Forms err and etc. in forms
+*/
+form div.error p{
+    color: red;
+    font-style: italic;
+    font-size:  1.1rem;
+}

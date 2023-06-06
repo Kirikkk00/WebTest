@@ -26,14 +26,18 @@
         <div class="container reg_form">
             <form class="row justify-content-center" method="post" action="reg.php">
                 <h2>Форма для регистрации</h2>
+                <div class="mb-3 col-12 col-md-4 error">
+                    <p><?=$errorMessage?></p>
+                </div>
+                <div class="w-100"></div>
                 <div class="mb-3 col-12 col-md-4">
                     <label for="formGroupExampleInput" class="form-label">Логин</label>
-                    <input name="login" type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+                    <input name="login" value="<?=$login?>" type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
                 </div>
                 <div class="w-100"></div>
                 <div class="mb-3 col-12 col-md-4">
                     <label for="exampleInputEmail1" class="form-label">Электронная почта</label>
-                    <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input name="email" value="<?=$login?>" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">Ваша почта не будет использована для спама</div>
                 </div>
                 <div class="w-100"></div>
